@@ -15,7 +15,7 @@ st.markdown("""<style>
 
 html, body {
     font-family: 'Space Grotesk', sans-serif;
-    background: linear-gradient(#ffffff, #ffd1dc 0%, #ffe0b2 100%);
+    background: linear-gradient(#ffffff, #ffd1dc 15%, #ffe0b2 100%);
     color: #2c2c2c;
     height: 100%;
     margin: 0;
