@@ -65,8 +65,9 @@ snack = st.text_input("Tell me everything", placeholder="e.g., a banana, a Fairl
 
 # Reasoning agent - local snack-to-calorie logic
 snack_calories = {
-    "fairlife protein shake": 150,
-    "banana": 105,
+    "a fairlife protein shake": 150,
+    "a banana": 105,
+    "a slice of pizza": 285,
 }
 
 def get_calories(snack_query):
