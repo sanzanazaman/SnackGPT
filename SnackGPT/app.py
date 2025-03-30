@@ -67,7 +67,6 @@ snack = st.text_input("Tell me everything", placeholder="e.g., a banana, a Fairl
 snack_calories = {
     "a fairlife protein shake": 150,
     "a banana": 105,
-    "a slice of pizza": 285,
 }
 
 def get_calories(snack_query):
