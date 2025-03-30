@@ -27,14 +27,14 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30vh;
+    height: 10vh;
     text-align: center;
 }
 
 .stTextInput > div > input {
     background-color: #fffaf7;
     color: #2c2c2c;
-    border-radius: 8px;
+    border-radius: 0px;
     border: 1px solid #000000;
 }
 
