@@ -27,7 +27,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 30vh;
     text-align: center;
 }
 
