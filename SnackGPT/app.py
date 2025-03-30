@@ -9,64 +9,61 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Robust CSS with pastel background, custom focus ring, and font
-st.markdown("""<style>
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+# Cleaned and complete CSS block
+st.markdown('''
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
 
-html, body, [data-testid="stAppViewContainer"], .center-wrapper {
-    text-align: center;
+    html, body, [data-testid="stAppViewContainer"], .center-wrapper {
+        font-family: 'Space Grotesk', sans-serif;
+        background: linear-gradient(135deg, #ffd1dc 0%, #ffe0b2 100%);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
 
-    text-align: center;
+    .center-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
 
-    font-family: 'Space Grotesk', sans-serif;
-    background: linear-gradient(135deg, #ffd1dc 0%, #ffe0b2 100%);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+    .stTextInput > div > input {
+        background-color: #fffaf7;
+        color: white;
+        border-radius: 8px;
+        border: 1px solid #f8c4c4;
+    }
 
-.center-wrapper {
-    text-align: center;
+    .stTextInput > div > input:focus {
+        border: 1px solid #ffb6b9 !important;
+        outline: none !important;
+        box-shadow: 0 0 0 0.15rem rgba(255, 182, 185, 0.5);
+    }
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    text-align: center;
-}
+    .stButton>button {
+        background-color: #ffb6b9;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
 
-.stTextInput > div > input {
-    background-color: #fffaf7;
-    color: white;
-    border-radius: 8px;
-    border: 1px solid #f8c4c4;
-}
+    .stButton>button:hover {
+        background-color: #fa929b;
+    }
 
-.stTextInput > div > input:focus {
-    border: 1px solid #ffb6b9 !important;
-    outline: none !important;
-    box-shadow: 0 0 0 0.15rem rgba(255, 182, 185, 0.5);
-}
-
-.stButton>button {
-    background-color: #ffb6b9;
-    color: white;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.stButton>button:hover {
-    background-color: #fa929b;
-}
-.e1nzilvr5 { visibility: hidden; }
-</style>""", unsafe_allow_html=True)
+    .e1nzilvr5 { visibility: hidden; }
+    </style>
+''', unsafe_allow_html=True)
 
 # Start center wrapper
 st.markdown('<div class="center-wrapper">', unsafe_allow_html=True)
@@ -78,7 +75,7 @@ st.title("Snack to Calorie Agent")
 st.markdown("Enter a snack to find out how many calories it contains.")
 
 # Input field
-snack = st.text_input("Type a snack and press Enter", placeholder="e.g., banana, Fairlife protein shake" style="color:white;", label_visibility="visible")
+snack = st.text_input("Type a snack and press Enter", placeholder="e.g., banana, Fairlife protein shake")
 
 # Reasoning agent - local snack-to-calorie logic
 snack_calories = {
