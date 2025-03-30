@@ -72,7 +72,7 @@ st.markdown('<div class="center-wrapper">', unsafe_allow_html=True)
 st.markdown("<h1 style=\"color:white; text-align:center;\">SnackGPT</h1>", unsafe_allow_html=True)
 
 # Description
-st.markdown("<p style=\"color:white; text-align:center; font-size:18px;\">What'd you have?</p>", unsafe_allow_html=True)
+st.markdown("What'd you have?")
 
 # Input field
 snack = st.text_input("👀", placeholder="e.g., banana, Fairlife protein shake")
