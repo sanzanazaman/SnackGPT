@@ -75,7 +75,7 @@ st.markdown('<div class="center-wrapper">', unsafe_allow_html=True)
 st.title("SnackGPT")
 
 # Description
-st.markdown("What'd you eat?"
+st.markdown("What'd you eat?")
 
 # Input field
 snack = st.text_input("Tell me everything!", placeholder="e.g., banana, Fairlife protein shake" style="color:white;", label_visibility="visible")
