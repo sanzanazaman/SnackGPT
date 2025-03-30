@@ -61,7 +61,7 @@ st.title("SnackGPT")
 st.markdown("What'd you have?")
 
 # Input field
-snack = st.text_input("Snack", placeholder="e.g., a banana, a Fairlife protein shake")
+snack = st.text_input("Tell me everything", placeholder="e.g., a banana, a Fairlife protein shake")
 
 # Reasoning agent - local snack-to-calorie logic
 snack_calories = {
