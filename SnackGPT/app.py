@@ -1,4 +1,3 @@
-
 import streamlit as st
 
 # Set page config
@@ -9,13 +8,17 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# Custom CSS for pastel pink-peach gradient and Partiful-style font
+# Robust CSS with pastel background, custom focus ring, and font
 st.markdown("""<style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
 
-html, body {
+html, body, [data-testid="stAppViewContainer"], .center-wrapper {
     font-family: 'Space Grotesk', sans-serif;
-    background: linear-gradient(#ffffff, #ffd1dc 15%, #ffe0b2 100%);
+    background: linear-gradient(135deg, #ffd1dc 0%, #ffe0b2 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
     color: #2c2c2c;
     height: 100%;
     margin: 0;
@@ -27,22 +30,28 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 90vh;
     text-align: center;
 }
 
 .stTextInput > div > input {
     background-color: #fffaf7;
     color: #2c2c2c;
-    border-radius: 0px;
-    border: 1px solid #black;
+    border-radius: 8px;
+    border: 1px solid #f8c4c4;
+}
+
+.stTextInput > div > input:focus {
+    border: 1px solid #ffb6b9 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 0.15rem rgba(255, 182, 185, 0.5);
 }
 
 .stButton>button {
     background-color: #ffb6b9;
     color: white;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: 0.3s;
 }
 
@@ -61,12 +70,15 @@ st.title("SnackGPT")
 st.markdown("What'd you have?")
 
 # Input field
-snack = st.text_input("Tell me everything", placeholder="e.g., banana, Fairlife protein shake")
+snack = st.text_input("Type a snack and press Enter", placeholder="e.g., banana, Fairlife protein shake", label_visibility="visible")
 
 # Reasoning agent - local snack-to-calorie logic
 snack_calories = {
     "fairlife protein shake": 150,
     "banana": 105,
+    "3 chocolate chip cookies": 160,
+    "handful of cashews": 157,
+    "slice of pizza": 285
 }
 
 def get_calories(snack_query):
@@ -79,7 +91,7 @@ if snack:
     if calories:
         st.success(f"That snack has approximately {calories} calories.")
     else:
-        st.warning("Idk, I'm actually pretty dumb thanks to Sanzana.")
+        st.warning("Sorry, I'm actually pretty dumb thanks to Sanzana.")
 
 # End center wrapper
 st.markdown('</div>', unsafe_allow_html=True)
