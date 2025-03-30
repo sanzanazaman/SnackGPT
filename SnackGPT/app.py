@@ -33,7 +33,7 @@ st.markdown('''
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 90vh;
+        height: 10vh;
     }
 
     .stTextInput > div > input {
