@@ -69,10 +69,10 @@ st.markdown('''
 st.markdown('<div class="center-wrapper">', unsafe_allow_html=True)
 
 # Title
-st.title("Snack to Calorie Agent")
+st.markdown("<h1 style=\"color:white; text-align:center;\">Snack to Calorie Agent</h1>", unsafe_allow_html=True)
 
 # Description
-st.markdown("Enter a snack to find out how many calories it contains.")
+st.markdown("<p style=\"color:white; text-align:center; font-size:18px;\">Enter a snack to find out how many calories it contains.</p>", unsafe_allow_html=True)
 
 # Input field
 snack = st.text_input("Type a snack and press Enter", placeholder="e.g., banana, Fairlife protein shake")
