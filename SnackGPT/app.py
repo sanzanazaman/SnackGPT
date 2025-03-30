@@ -42,7 +42,7 @@ html, body {
     background-color: #ffb6b9;
     color: white;
     font-weight: bold;
-    border-radius: 8px;
+    border-radius: 5px;
     transition: 0.3s;
 }
 
