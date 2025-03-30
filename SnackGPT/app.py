@@ -3,7 +3,7 @@ import streamlit as st
 
 # Set page config
 st.set_page_config(
-    page_title="Snack to Calorie Agent",
+    page_title="SnackGPT",
     page_icon="🍿",
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -75,7 +75,7 @@ st.markdown("<h1 style=\"color:white; text-align:center;\">Snack to Calorie Agen
 st.markdown("<p style=\"color:white; text-align:center; font-size:18px;\">Enter a snack to find out how many calories it contains.</p>", unsafe_allow_html=True)
 
 # Input field
-snack = st.text_input("Type a snack and press Enter", placeholder="e.g., banana, Fairlife protein shake")
+snack = st.text_input("👀", placeholder="e.g., banana, Fairlife protein shake")
 
 # Reasoning agent - local snack-to-calorie logic
 snack_calories = {
@@ -96,7 +96,7 @@ if snack:
     if calories:
         st.success(f"That snack has approximately {calories} calories.")
     else:
-        st.warning("Sorry, I don't have data for that snack.")
+        st.warning("Sorry, I'm actually pretty dumb. You can thank Sanzana for that.")
 
 # End center wrapper
 st.markdown('</div>', unsafe_allow_html=True)
