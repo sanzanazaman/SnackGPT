@@ -35,7 +35,7 @@ html, body {
     background-color: #fffaf7;
     color: #2c2c2c;
     border-radius: 0px;
-    border: 1px solid #000000;
+    border: 1px solid #black;
 }
 
 .stButton>button {
@@ -61,12 +61,12 @@ st.title("SnackGPT")
 st.markdown("What'd you have?")
 
 # Input field
-snack = st.text_input("Tell me everything", placeholder="e.g., a banana, a Fairlife protein shake")
+snack = st.text_input("Tell me everything", placeholder="e.g., banana, Fairlife protein shake")
 
 # Reasoning agent - local snack-to-calorie logic
 snack_calories = {
-    "a fairlife protein shake": 150,
-    "a banana": 105,
+    "fairlife protein shake": 150,
+    "banana": 105,
 }
 
 def get_calories(snack_query):
@@ -79,7 +79,7 @@ if snack:
     if calories:
         st.success(f"That snack has approximately {calories} calories.")
     else:
-        st.warning("Idk, I'm still pretty dumb thanks to Sanzana's poor engineering skills.")
+        st.warning("Idk, I'm actually pretty dumb thanks to Sanzana.")
 
 # End center wrapper
 st.markdown('</div>', unsafe_allow_html=True)
