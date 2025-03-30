@@ -1,3 +1,4 @@
+
 import streamlit as st
 
 # Set page config
@@ -13,19 +14,25 @@ st.markdown("""<style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
 
 html, body, [data-testid="stAppViewContainer"], .center-wrapper {
+    text-align: center;
+
+    text-align: center;
+
     font-family: 'Space Grotesk', sans-serif;
     background: linear-gradient(135deg, #ffd1dc 0%, #ffe0b2 100%);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    color: #white;
+    color: white;
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
 .center-wrapper {
+    text-align: center;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +43,7 @@ html, body, [data-testid="stAppViewContainer"], .center-wrapper {
 
 .stTextInput > div > input {
     background-color: #fffaf7;
-    color: #2c2c2c;
+    color: white;
     border-radius: 8px;
     border: 1px solid #f8c4c4;
 }
@@ -58,6 +65,7 @@ html, body, [data-testid="stAppViewContainer"], .center-wrapper {
 .stButton>button:hover {
     background-color: #fa929b;
 }
+.e1nzilvr5 { visibility: hidden; }
 </style>""", unsafe_allow_html=True)
 
 # Start center wrapper
@@ -67,10 +75,10 @@ st.markdown('<div class="center-wrapper">', unsafe_allow_html=True)
 st.title("SnackGPT")
 
 # Description
-st.markdown("What'd you have?")
+st.markdown("What'd you eat?"
 
 # Input field
-snack = st.text_input("Tell me", placeholder="e.g., banana, Fairlife protein shake", label_visibility="visible")
+snack = st.text_input("Tell me everything!", placeholder="e.g., banana, Fairlife protein shake" style="color:white;", label_visibility="visible")
 
 # Reasoning agent - local snack-to-calorie logic
 snack_calories = {
