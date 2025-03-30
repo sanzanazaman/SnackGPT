@@ -27,7 +27,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 50vh;
     text-align: center;
 }
 
@@ -35,7 +35,7 @@ html, body {
     background-color: #fffaf7;
     color: #2c2c2c;
     border-radius: 8px;
-    border: 1px solid #f8c4c4;
+    border: 1px solid #000000;
 }
 
 .stButton>button {
