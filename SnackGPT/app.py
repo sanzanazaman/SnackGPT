@@ -30,7 +30,7 @@ html, body, [data-testid="stAppViewContainer"], .center-wrapper {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 10vh;
     text-align: center;
 }
 
