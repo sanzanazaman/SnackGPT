@@ -19,7 +19,7 @@ html, body, [data-testid="stAppViewContainer"], .center-wrapper {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    color: #2c2c2c;
+    color: #white;
     height: 100%;
     margin: 0;
     padding: 0;
