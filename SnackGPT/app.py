@@ -78,7 +78,7 @@ st.title("SnackGPT")
 st.markdown("What'd you eat?")
 
 # Input field
-snack = st.text_input("Tell me everything!", placeholder="e.g., banana, Fairlife protein shake" style="color:white;", label_visibility="visible")
+snack = st.text_input("Tell me everything", placeholder="e.g., banana, Fairlife protein shake" style="color:white;", label_visibility="visible")
 
 # Reasoning agent - local snack-to-calorie logic
 snack_calories = {
@@ -99,7 +99,7 @@ if snack:
     if calories:
         st.success(f"That snack has approximately {calories} calories.")
     else:
-        st.warning("Sorry, I'm actually pretty dumb thanks to Sanzana.")
+        st.warning("Sorry, I don't have data for that snack.")
 
 # End center wrapper
 st.markdown('</div>', unsafe_allow_html=True)
