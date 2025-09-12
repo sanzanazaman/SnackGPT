@@ -69,7 +69,7 @@ st.markdown('''
 st.markdown('<div class="center-wrapper">', unsafe_allow_html=True)
 
 # Title
-st.markdown("<h1 style=\"color:white; text-align:center;\">SnackGPT</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style=\"color:black; text-align:center;\">SnackGPT</h1>", unsafe_allow_html=True)
 
 # Description
 st.markdown("What'd you have?")
