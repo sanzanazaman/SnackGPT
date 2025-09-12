@@ -16,7 +16,7 @@ st.markdown('''
 
     html, body, [data-testid="stAppViewContainer"], .center-wrapper {
         font-family: 'Space Grotesk', sans-serif;
-        background: #000000;
+        background: #ffffff;
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -40,7 +40,7 @@ st.markdown('''
         background-color: #fffaf7;
         color: white;
         border-radius: 8px;
-        border: 1px solid #f8c4c4;
+        border: 1px solid #000000;
     }
 
     .stTextInput > div > input:focus {
