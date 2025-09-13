@@ -58,7 +58,7 @@ st.markdown('''
     }
 
     .stButton>button:hover {
-        background-color: #fa929b;
+        background-color: #000000;
     }
 
     .e1nzilvr5 { visibility: hidden; }
