@@ -16,7 +16,7 @@ st.markdown('''
 
     html, body, [data-testid="stAppViewContainer"], .center-wrapper {
         font-family: 'Space Grotesk', sans-serif;
-        background: #cbd6e2;
+        background: #ffffff;
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
