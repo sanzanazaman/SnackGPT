@@ -44,7 +44,7 @@ st.markdown('''
     }
 
     .stTextInput > div > input:focus {
-        border: 1px solid #000000 !important;
+        border: 1px solid #ffffff !important;
         outline: none !important;
         box-shadow: 0 0 0 0.15rem rgba(192, 192, 192, 0.5);
     }
