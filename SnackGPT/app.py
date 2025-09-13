@@ -44,13 +44,13 @@ st.markdown('''
     }
 
     .stTextInput > div > input:focus {
-        border: 1px solid #ffffff !important;
+        border: 1px solid #000000 !important;
         outline: none !important;
         box-shadow: 0 0 0 0.15rem rgba(192, 192, 192, 0.5);
     }
 
     .stButton>button {
-        background-color: #ffb6b9;
+        background-color: #000000;
         color: white;
         font-weight: bold;
         border-radius: 8px;
