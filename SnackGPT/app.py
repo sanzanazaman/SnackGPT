@@ -96,7 +96,7 @@ if snack:
     if calories:
         st.success(f"That snack has approximately {calories} calories.")
     else:
-        st.warning("Sorry, Idk. I'm actually pretty dumb. You can thank Sanzana for that.")
+        st.warning("Sorry, Idk. I'm actually pretty dumb thanks to Sanzana.")
 
 # End center wrapper
 st.markdown('</div>', unsafe_allow_html=True)
